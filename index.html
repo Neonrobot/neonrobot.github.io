@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script src="anim.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="web fonts/vtclettererpro_regular_macroman/stylesheet.css"/>
+
+<style>
+#example{
+	font-size:4em;
+	font-family:'vtc_letterer_proregular',comic-sans;
+	color:white;
+	width:500px;
+	height:500px;
+    display: table-cell;
+    vertical-align:middle;
+    text-align: center;
+   	background-image:url(IM_Swirl.png);
+	background-repeat:no-repeat;
+}
+
+
+#container{
+	width:100%;
+	height:100%;
+
+}
+
+#ct{
+position:relative;
+width:500px;
+margin:0 auto;
+top:40px;
+}
+
+#about{
+	opacity:0.5;
+	font-family:'vtc_letterer_proregular',comic-sans;
+	position:absolute;
+	display:block;
+	bottom:0px;
+	text-align: center;
+	width:99%;
+}
+
+.playme{
+color:grey;
+padding:0;
+top:0px;
+margin:0;	
+}
+</style>
+
+
+
+</head>
+<body>
+    
+<div id='container'>
+
+<div id="ct"><div onclick="boostDignity()" id="example">You Matter<p id="cmts" class="playme">Click me to start</p></div></div>
+
+</div>
+
+<div id="about">I Matter is a Creative Recovery project | <a href="http://upliftbarnsley.blogspot.co.uk/2015/09/i-matter-you-matter-we-matter.html">Click here for more info</a></div>
+</body>
+
+<script>
+function boostDignity(){
+
+var item;
+item = document.getElementById('example');
+
+
+var dur = 4;
+var sdur = 1.5;
+
+anim(document.getElementById('cmts'), {color:'#000000', fontSize:'0px'},5)
+
+.anim(item, {color:'#000000'},dur)
+.anim(function(){item.innerHTML="Always<br>remember..."})
+.anim(item, {color:'#ffffff'},dur)
+.anim(item, {color:'#000000'},sdur)
+
+.anim(function(){item.innerHTML="You matter"})
+.anim(item, {color:'#ffffff'},dur)
+.anim(item, {color:'#000000'},sdur)
+
+.anim(function(){item.innerHTML="braver<br>than you believe"})
+.anim(item, {color:'#ffffff'},dur)
+.anim(item, {color:'#000000'},sdur)
+
+.anim(function(){item.innerHTML="stronger<br>than you seem"})
+.anim(item, {color:'#ffffff'},dur)
+.anim(item, {color:'#000000'},sdur)
+
+.anim(function(){item.innerHTML="smarter<br>than you think"})
+.anim(item, {color:'#ffffff'},dur)
+.anim(item, {color:'#000000'},sdur)
+
+.anim(function(){item.innerHTML="and loved<br>more than<br>you know."})
+.anim(item, {color:'#ffffff'},dur)
+.anim(item, {color:'#000000'},sdur)
+
+.anim(function(){item.innerHTML="Now let's do<br>that again.<br><br> Say it with me"})
+.anim(item, {color:'#ffffff'},dur)
+.anim(item, {color:'#000000'},sdur)
+
+.anim(function(){item.innerHTML="I matter."})
+.anim(item, {color:'#ffffff'},dur)
+.anim(item, {color:'#000000'},sdur)
+
+.anim(function(){item.innerHTML="I am braver<br>than I believe."})
+.anim(item, {color:'#ffffff'},dur)
+.anim(item, {color:'#000000'},sdur)
+
+.anim(function(){item.innerHTML="I am stronger<br>than I seem."})
+.anim(item, {color:'#ffffff'},dur)
+.anim(item, {color:'#000000'},sdur)
+
+.anim(function(){item.innerHTML="I am smarter<br>than I think."})
+.anim(item, {color:'#ffffff'},dur)
+.anim(item, {color:'#000000'},sdur)
+
+.anim(function(){item.innerHTML="I am loved<br>more than<br>I know."})
+.anim(item, {color:'#ffffff'},dur)
+.anim(item, {color:'#000000'},sdur)
+
+.anim(function(){item.innerHTML="I Matter <p id='cmts' class='playme' onclick='boostDignity()'>Play again</p>"})
+.anim(item, {color:'#ffffff'},dur);
+
+}
+</script>
+
+</html>
